@@ -1,0 +1,415 @@
+extends layout
+
+block content
+  //- WRAPPER ALL
+  .macro_tm_wrapper_all(data-audio="off")
+    //- HEADER
+    header.macro_tm_header
+      .in
+        .in_relative
+          .logo
+            a.light(href="#")
+              img(src="img/logo/macro_light.png", alt="")
+            |           
+            a.dark(href="#")
+              img(src="img/logo/macro_dark.png", alt="")
+          |         
+          .navigation_list_wrap
+            .menu
+              ul.anchor_nav
+                li
+                  a(href="#home") Home
+                |               
+                li
+                  a(href="#proposal") Proposal
+                |                   
+                li
+                  a(href="#background") Background
+                |               
+                li
+                  a(href="#sketch") Sketch
+                |               
+                li
+                  a(href="#outline") Outline
+                |               
+                li
+                  a(href="#element") Element
+                |               
+                li
+                  a(href="#costume") Costume
+                |         
+                li
+                  a(href="#before") Before
+                |         
+                li
+                  a(href="#during") During
+                |         
+                li
+                  a(href="#after") After
+            |           
+            .macro_tm_trigger
+              .hamburger.hamburger--collapse-r
+                .hamburger-box
+                  .hamburger-inner
+      //- MOBILE MENU
+      .macro_tm_mobile_menu_wrap
+        ul.anchor_nav
+          li
+            a(href="#home") Home
+          |         
+          li
+            a(href="#proposal") Proposal
+          |                   
+          li
+            a(href="#background") Background
+          |             
+          li
+            a(href="#sketch") Sketch
+          |         
+          li
+            a(href="#outline") Outline
+          |         
+          li
+            a(href="#element") Element
+          |         
+          li
+            a(href="#costume") Costume
+          |         
+          li
+            a(href="#before") Before
+          |         
+          li
+            a(href="#during") During
+          |         
+          li
+            a(href="#after") After
+    //- /HEADER
+    //- CONTENT
+    .macro_tm_content
+      //- HOME
+      #home.macro_tm_section
+        .macro_tm_top_bg_wrap.home
+          .top_bg
+            .overlay_image
+            |           
+            .overlay_slider.vegas-slide
+              .vegas-slide-inner
+            |           
+            .overlay_color.kenburn
+          |         
+          .top_bg_content.home
+            .hero_title
+              p.first
+                span.macro_tm_animation_text_word
+            |           
+            .down
+              .in.anchor
+                a(href="#about")
+                  span.animated
+                    i.xcon-angle-down
+      //- /HOME
+      //- Proposal
+      #proposal.macro_tm_section
+        .macro_tm_title_holder
+          span.title_section Proposal
+          |         
+          span.line
+        |       
+        .hideanimation
+          .macro_tm_about_me_wrap
+            .my_image.hideforanimation
+              .overlay_about
+            |         
+            .image_definition.hideforanimation
+              .description
+                p
+                  | Through the design of the Peking Opera project, the designer will help people understand the Chinese opera’s profound cultural background and unique characteristics. The goal of the project is to express the artistic charm of the Peking Opera and inspire people with the love, the art of the Chinese nation and patriotic emotion. The Peking Opera project will help improve national quality and artistic accomplishment, so as to reignite the transmission and development of the culture of the Peking Opera.
+              |
+      //- /Proposal
+      //- BACKGROUND
+      #background.macro_tm_section
+        .macro_tm_title_holder
+          span.title_section Background
+          |         
+          span.line
+        |       
+        .macro_tm_testimonials_wrap
+          .flexslider
+            ul.slides
+              li
+                .persons_wrap
+                  .image.first
+                    .overlay
+                  |                 
+                  .definition
+                    .testimonial_word
+                      p
+                        | This project was inspired by a Chinese historical story called Hua Mulan. Mulan is one of the most well-known ancient legends in ancient China, and the ballad of Mulan has been told in school textbooks since the story was passed down by our ancestors. The story traces the transformations of her narrative from its inception in the Northern Wei ballad through to the 2010 cinema versions in order to trace the evolution of gendered norms of loyalty, patriotism, virtue and filial piety. Chinese people love her story because she represents the prominence of Xiao or Hsiao, which means filial piety. As a young woman, Mulan decides to impersonate a man to serve in the army in the place of her father. There was a 1998 movie version of Mulan made by Disney studio, which has influenced children worldwide. The animated English-speaking speaker, Mulan fully illustrates the Chinese culture to the western world; therefore, other fascinating topics arise. Western people evaluate Mulan extremely differently from people from to East. People think that she is the new modern female hero because she subverts traditional female status in society. The image that she created is the powerful and independent warrior, and no more cowardly wives or slaves, as well as the capable housewife who traditionally sits beside her husband all the time.  In this project, the designer redesigned the image of the character at three different time periods, which are called Hua Dan, Wu Jing, and Tsing Yi.
+                    |                   
+                    .mini_person
+                      img(src="img/testimonial/1.jpg ", alt="")
+              |             
+      //- /BACKGROUND
+      //- SKETCH
+      #sketch.macro_tm_section
+        .macro_tm_title_holder
+          span.title_section Sketch
+          |         
+          span.line
+        |       
+        .hideanimation
+        .macro_tm_single_section_wrap
+          .container
+            .inner
+              .vavilon_tm_blog_second_wrap
+                .macro_tm_single_page_section
+                  img(src="/img/sketch/sketch1.png", alt="")
+      //- /SKETCH
+      //- ELEMENT
+      #element.macro_tm_section
+        .macro_tm_title_holder
+          span.title_section Element
+          |         
+          span.line
+        |       
+        .hideanimation
+        .macro_tm_single_section_wrap
+          .container
+            .inner
+              .vavilon_tm_blog_second_wrap
+                .macro_tm_single_page_section
+                  .blog_definition_wrap
+                    .fixed_image_blog
+                      .content
+                        img(src="/img/element/whole.jpg", alt="")
+      //- /ELEMENT
+      //- COSTUME
+      #costume.macro_tm_section
+        .macro_tm_portfolio_wrap
+          .macro_tm_title_holder
+            span.title_section Costume
+            span.line
+          .macro_tm_portfolio_wrap(data-col='4', data-space='10', data-lightbox-gallery='on', data-hover-img='scale', data-overlay-bgcolor='transDark', data-text-hor-pos='center', data-text-ver-pos='middle', data-hover-animate='zoomIn', data-round='e', data-animation='woop', data-delay='300')
+            ul.macro_tm_portfolio_list.gallery_zoom
+              li
+                article.item_holder
+                  img.image(src='img/costume/1.jpg', alt='')
+                  .overlay
+                    .clickable_wrap
+                      a.zoom(href='img/costume/1.jpg')
+                        img.svg(src='img/svg/zoom.svg', alt='')
+                        span.definition_icon.zoom Zoom
+                    .portfolio_title
+                      h5.title_name
+                        a(href='portfolio_single.html') Name?
+              li
+                article.item_holder
+                  img.image(src='img/costume/2.jpg', alt='')
+                  .overlay
+                    .clickable_wrap
+                      a.zoom(href='img/costume/2.jpg')
+                        img.svg(src='img/svg/zoom.svg', alt='')
+                        span.definition_icon.zoom Zoom
+                    .portfolio_title
+                      h5.title_name
+                        a(href='portfolio_single.html') Name?
+              li
+                article.item_holder
+                  img.image(src='img/costume/3.jpg', alt='')
+                  .overlay
+                    .clickable_wrap
+                      a.zoom(href='img/costume/3.jpg')
+                        img.svg(src='img/svg/zoom.svg', alt='')
+                        span.definition_icon.zoom Zoom
+                    .portfolio_title
+                      h5.title_name
+                        a(href='portfolio_single.html') Name?
+              li
+                article.item_holder
+                  img.image(src='img/costume/4.jpg', alt='')
+                  .overlay
+                    .clickable_wrap
+                      a.zoom(href='img/costume/4.jpg')
+                        img.svg(src='img/svg/zoom.svg', alt='')
+                        span.definition_icon.zoom Zoom
+                    .portfolio_title
+                      h5.title_name
+                        a(href='portfolio_single.html') Name?
+              li
+                article.item_holder
+                  img.image(src='img/costume/5.jpg', alt='')
+                  .overlay
+                    .clickable_wrap
+                      a.zoom(href='img/costume/5.jpg')
+                        img.svg(src='img/svg/zoom.svg', alt='')
+                        span.definition_icon.zoom Zoom
+                    .portfolio_title
+                      h5.title_name
+                        a(href='portfolio_single.html') Name?
+              li
+                article.item_holder
+                  img.image(src='img/costume/6.jpg', alt='')
+                  .overlay
+                    .clickable_wrap
+                      a.zoom(href='img/costume/6.jpg')
+                        img.svg(src='img/svg/zoom.svg', alt='')
+                        span.definition_icon.zoom Zoom
+                    .portfolio_title
+                      h5.title_name
+                        a(href='portfolio_single.html') Name?
+              li
+                article.item_holder
+                  img.image(src='img/costume/7.jpg', alt='')
+                  .overlay
+                    .clickable_wrap
+                      a.zoom(href='img/costume/7.jpg')
+                        img.svg(src='img/svg/zoom.svg', alt='')
+                        span.definition_icon.zoom Zoom
+                    .portfolio_title
+                      h5.title_name
+                        a(href='portfolio_single.html') Name?
+              li
+                article.item_holder
+                  img.image(src='img/costume/8.jpg', alt='')
+                  .overlay
+                    .clickable_wrap
+                      a.zoom(href='img/costume/8.jpg')
+                        img.svg(src='img/svg/zoom.svg', alt='')
+                        span.definition_icon.zoom Zoom
+                    .portfolio_title
+                      h5.title_name
+                        a(href='portfolio_single.html') Name?
+              li
+                article.item_holder
+                  img.image(src='img/costume/9.jpg', alt='')
+                  .overlay
+                    .clickable_wrap
+                      a.zoom(href='img/costume/9.jpg')
+                        img.svg(src='img/svg/zoom.svg', alt='')
+                        span.definition_icon.zoom Zoom
+                    .portfolio_title
+                      h5.title_name
+                        a(href='portfolio_single.html') Name?
+      //- /COSTUME
+      //- OUTLINE
+      #outline.macro_tm_section
+        .macro_tm_list_wrap.section_team(data-column='3', data-space='20')
+          .macro_tm_title_holder
+            span.title_section Outline
+            span.line
+          .container
+            ul.macro_list.another_animation
+              li.list_li.hideforanimation
+                .list_in
+                  .inner
+                    .list_image
+                      a(href='javascript:;')
+                        img(src='img/outline/1.png', alt='')
+                    .overlay_image
+                      a(href='javascript:;')
+                  .macro_tm_team_author_definition
+                    .team_information
+                      span.name
+                        a(href='javascript:;') Before
+                      span.job Ceo Founder
+              li.list_li.hideforanimation
+                .list_in
+                  .inner
+                    .list_image
+                      a(href='javascript:;')
+                        img(src='img/outline/2.png', alt='')
+                    .overlay_image
+                      a(href='javascript:;')
+                  .macro_tm_team_author_definition
+                    .team_information
+                      span.name
+                        a(href='javascript:;') After
+                      span.job Model
+              li.list_li.hideforanimation
+                .list_in
+                  .inner
+                    .list_image
+                      a(href='javascript:;')
+                        img(src='img/outline/3.png', alt='')
+                    .overlay_image
+                      a(href='javascript:;')
+                  .macro_tm_team_author_definition
+                    .team_information
+                      span.name
+                        a(href='javascript:;') During
+                      span.job Manager Company
+      //- /OUTLINE
+      //- BEFORE
+      #before.macro_tm_section
+        .macro_tm_title_holder
+          span.title_section Before
+          |         
+          span.line
+        |       
+        .hideanimation
+        .macro_tm_single_section_wrap
+          .container
+            .inner
+              .vavilon_tm_blog_second_wrap
+                .macro_tm_single_page_section
+                  .blog_definition_wrap
+                    .fixed_image_blog
+                      .content
+                        img(src="/img/before/before.jpg", alt="")
+      //- /BEFORE
+      //- DURING
+      #during.macro_tm_section
+        .macro_tm_title_holder
+          span.title_section During
+          |         
+          span.line
+        |       
+        .hideanimation
+        .macro_tm_single_section_wrap
+          .container
+            .inner
+              .vavilon_tm_blog_second_wrap
+                .macro_tm_single_page_section
+                  .blog_definition_wrap
+                    .fixed_image_blog
+                      .content
+                        img(src="/img/during/during.jpg", alt="")
+      //- /DURING
+      //- AFTER
+      #after.macro_tm_section
+        .macro_tm_title_holder
+          span.title_section After
+          |         
+          span.line
+        |       
+        .hideanimation
+        .macro_tm_single_section_wrap
+          .container
+            .inner
+              .vavilon_tm_blog_second_wrap
+                .macro_tm_single_page_section
+                  .blog_definition_wrap
+                    .fixed_image_blog
+                      .content
+                        img(src="/img/after/after.jpg", alt="")
+      //- /AFTER
+
+    //- /CONTENT
+    //- FOOTER
+    footer.macro_tm_footer
+      .macro_tm_footer_copyright
+        p.made
+          | Made with 
+          i.xcon-heart
+          |  in Studio
+        |       
+        p.copyright 2018 Meng Zhou Designs - All Rights Reserved
+    //- /FOOTER
+    a.macro_tm_totop(href="#")
+      i.xcon-angle-up
+    //- AUDIOBOX
+    .macro_tm_audio_wrap
+      audio.macro_tm_myaudio
+        source(src="audio/music.mp3", type="audio/mp3")
+    //- /AUDIOBOX
+  //- / WRAPPER ALL
