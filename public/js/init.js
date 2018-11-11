@@ -715,9 +715,9 @@ function macro_tm_kenburn_slider(){
 			delay:6000,
 
 			slides: [
-				{ src: 'img/before/before.jpg' },
-				{ src: 'img/during/during.jpg' },
-				{ src: 'img/after/after.jpg' },
+				{ src: 'img/banner/before-outline.jpg' },
+				{ src: 'img/banner/during-outline.jpg' },
+				{ src: 'img/banner/after-outline.jpg' },
 			]
 
 		});
