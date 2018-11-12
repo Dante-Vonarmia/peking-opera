@@ -1,0 +1,10 @@
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+	background-color: transparent;
+}
+
+.header .menu > li {
+	margin: 0 !important;
+}
+.header .menu > li.active > a {
+	opacity: 1!important;
+}
