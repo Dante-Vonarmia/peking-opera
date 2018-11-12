@@ -33,6 +33,7 @@ $(function() {
         parallax: true,
         speed: 1000
     });
+    
     var initPhotoSwipeFromDOM = function(gallerySelector) {
 
         // parse slide data (url, title, size ...) from DOM elements 
