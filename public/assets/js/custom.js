@@ -27,6 +27,16 @@ $(function() {
     });
 
     //Intialize Slider
+    var slider = new Swiper('#hero', {
+        loop: true,
+        autoplay: {
+            delay: 6000,
+        },
+        effect: 'fade',
+        speed: 3000
+    });
+
+    //Intialize Background Slider
     var background_slider = new Swiper('#background_slider.swiper-container', {
         pagination: '.swiper-pagination',
         autoHeight: true,
@@ -38,7 +48,7 @@ $(function() {
         speed: 1000
     });
 
-    //Intialize Testamonials
+    //Intialize Sketch Slider
     var sketch_slider = new Swiper('#sketch_slider.swiper-container', {
         paginationClickable: true,
         nextButton: '.swiper-button-next',

@@ -2,30 +2,148 @@ extends layout
 
 block content
   .page-wrappers
-
-    //- BEGIN JUMBOTRON
-    section#home.jumbotron.full-vh.bg-white(data-pages='parallax')
+    section#home.jumbotron.full-vh(data-pages="parallax")
       .inner.full-height
         //- BEGIN SLIDER
-        //- BEGIN CONTENT
-        .content-layer
-          .inner.full-height(data-pages-bg-image='assets/images/banner/before-outline.jpg', data-bg-overlay='black', data-overlay-opacity='0.33', draggable='false')
-            .container-xs-height.full-height.inner
-              .col-xs-height.col-middle.text-left
-                .container
-                  .col-sm-12
-                    h1.light.bold.text-white.text-center The Culture of China
-                    h1.light.bold.text-white.text-center Peking Opera
-        //- END CONTENT
+        #hero.swiper-container
+          .swiper-wrapper
+            //- BEGIN SLIDE
+            .swiper-slide.bg-white
+              //- BEGIN IMAGE PARRALAX
+              .slider-wrapper
+                .background-wrapper(data-swiper-parallax="20%")
+                  //- YOUR BACKGROUND IMAGE HERE, YOU CAN ALSO USE IMG with the same classes
+                  .background(data-pages-bg-image="assets/images/banner/before-outline.svg", data-bg-overlay='black', data-overlay-opacity='0.33', draggable='false')
               //- END IMAGE PARRALAX
+              //- BEGIN CONTENT
+              .content-layer
+                .inner.full-height
+                  .container-xs-height.full-height
+                    .col-xs-height.col-middle.text-left
+                      .container.text-center
+                        h1.light.bold.text-white.text-center The Culture of China
+                        h1.light.bold.text-white.text-center Peking Opera
+              //- END CONTENT
+            //- END SLIDE
+            //- BEGIN SLIDE
+            .swiper-slide.bg-white
+              //- BEGIN IMAGE PARRALAX
+              .slider-wrapper
+                .background-wrapper(data-swiper-parallax="20%")
+                  //- YOUR BACKGROUND IMAGE HERE, YOU CAN ALSO USE IMG with the same classes
+                  .background(data-pages-bg-image="assets/images/banner/before-outline.jpg", data-bg-overlay='black', data-overlay-opacity='0.33', draggable='false')
+              //- END IMAGE PARRALAX
+              //- BEGIN CONTENT
+              .content-layer
+                .inner.full-height
+                  .container-xs-height.full-height
+                    .col-xs-height.col-middle.text-left
+                      .container.text-center
+                        h1.light.bold.text-white.text-center The Culture of China
+                        h1.light.bold.text-white.text-center Peking Opera
+              //- END CONTENT
+            //- END SLIDE
+            //- BEGIN SLIDE
+            .swiper-slide.bg-white
+              //- BEGIN IMAGE PARRALAX
+              .slider-wrapper
+                .background-wrapper(data-swiper-parallax="20%")
+                  //- YOUR BACKGROUND IMAGE HERE, YOU CAN ALSO USE IMG with the same classes
+                  .background(data-pages-bg-image="assets/images/banner/during-outline.svg", data-bg-overlay='black', data-overlay-opacity='0.33', draggable='false')
+              //- END IMAGE PARRALAX
+              //- BEGIN CONTENT
+              .content-layer
+                .inner.full-height
+                  .container-xs-height.full-height
+                    .col-xs-height.col-middle.text-left
+                      .container.text-center
+                        h1.light.bold.text-white.text-center The Culture of China
+                        h1.light.bold.text-white.text-center Peking Opera
+              //- END CONTENT
+            //- END SLIDE
+            //- BEGIN SLIDE
+            .swiper-slide.bg-white
+              //- BEGIN IMAGE PARRALAX
+              .slider-wrapper
+                .background-wrapper(data-swiper-parallax="20%")
+                  //- YOUR BACKGROUND IMAGE HERE, YOU CAN ALSO USE IMG with the same classes
+                  .background(data-pages-bg-image="assets/images/banner/during-outline.jpg", data-bg-overlay='black', data-overlay-opacity='0.33', draggable='false')
+              //- END IMAGE PARRALAX
+              //- BEGIN CONTENT
+              .content-layer
+                .inner.full-height
+                  .container-xs-height.full-height
+                    .col-xs-height.col-middle.text-left
+                      .container.text-center
+                        h1.light.bold.text-white.text-center The Culture of China
+                        h1.light.bold.text-white.text-center Peking Opera
+              //- END CONTENT
+            //- END SLIDE
+            //- BEGIN SLIDE
+            .swiper-slide.bg-white
+              //- BEGIN IMAGE PARRALAX
+              .slider-wrapper
+                .background-wrapper(data-swiper-parallax="20%")
+                  //- YOUR BACKGROUND IMAGE HERE, YOU CAN ALSO USE IMG with the same classes
+                  .background(data-pages-bg-image="assets/images/banner/after-outline.svg", data-bg-overlay='black', data-overlay-opacity='0.33', draggable='false')
+              //- END IMAGE PARRALAX
+              //- BEGIN CONTENT
+              .content-layer
+                .inner.full-height
+                  .container-xs-height.full-height
+                    .col-xs-height.col-middle.text-left
+                      .container.text-center
+                        h1.light.bold.text-white.text-center The Culture of China
+                        h1.light.bold.text-white.text-center Peking Opera
+              //- END CONTENT
+            //- END SLIDE
+            //- BEGIN SLIDE
+            .swiper-slide.bg-white
+              //- BEGIN IMAGE PARRALAX
+              .slider-wrapper
+                .background-wrapper(data-swiper-parallax="20%")
+                  //- YOUR BACKGROUND IMAGE HERE, YOU CAN ALSO USE IMG with the same classes
+                  .background(data-pages-bg-image="assets/images/banner/after-outline.jpg", data-bg-overlay='black', data-overlay-opacity='0.33', draggable='false')
+              //- END IMAGE PARRALAX
+              //- BEGIN CONTENT
+              .content-layer
+                .inner.full-height
+                  .container-xs-height.full-height
+                    .col-xs-height.col-middle.text-left
+                      .container.text-center
+                        h1.light.bold.text-white.text-center The Culture of China
+                        h1.light.bold.text-white.text-center Peking Opera
+              //- END CONTENT
             //- END SLIDE
           //- BEGIN ANIMATED MOUSE
-        .mouse-wrapper
-          .mouse
-            .mouse-scroll
+          .mouse-wrapper
+            .mouse
+              .mouse-scroll
+      //- END SLIDER
 
-        //- END SLIDER
-    //- END JUMBOTRON
+    //- //- BEGIN JUMBOTRON
+    //- section#home.jumbotron.full-vh.bg-white(data-pages='parallax')
+    //-   .inner.full-height
+    //-     //- BEGIN SLIDER
+    //-     //- BEGIN CONTENT
+    //-     .content-layer
+    //-       .inner.full-height(data-pages-bg-image='assets/images/banner/before-outline.jpg', data-bg-overlay='black', data-overlay-opacity='0.33', draggable='false')
+    //-         .container-xs-height.full-height.inner
+    //-           .col-xs-height.col-middle.text-left
+    //-             .container
+    //-               .col-sm-12
+    //-                 h1.light.bold.text-white.text-center The Culture of China
+    //-                 h1.light.bold.text-white.text-center Peking Opera
+    //-     //- END CONTENT
+    //-           //- END IMAGE PARRALAX
+    //-         //- END SLIDE
+    //-       //- BEGIN ANIMATED MOUSE
+    //-     .mouse-wrapper
+    //-       .mouse
+    //-         .mouse-scroll
+
+    //-     //- END SLIDER
+    //- //- END JUMBOTRON
 
     section#proposal.p-b-85.p-t-75
       .container
