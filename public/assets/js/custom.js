@@ -28,12 +28,9 @@ $(function() {
 
     //Intialize Slider
     var slider = new Swiper('#hero', {
-        loop: true,
-        autoplay: {
-            delay: 6000,
-        },
+        autoplay: true,
         effect: 'fade',
-        speed: 3000
+        speed: 4000
     });
 
     //Intialize Background Slider
