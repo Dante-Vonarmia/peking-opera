@@ -7,4 +7,9 @@
 }
 .header .menu > li.active > a {
 	opacity: 1!important;
+	color: #bb898b!important;
+}
+
+.pink-mz {
+	color: #bb898b!important;
 }

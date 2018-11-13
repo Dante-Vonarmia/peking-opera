@@ -15,7 +15,7 @@ block content
                 .container
                   .col-sm-12
                     h1.light.bold.text-white.text-center The Culture of China
-                    h1.light.bold.text-white.text-center Peking-Opera
+                    h1.light.bold.text-white.text-center Peking Opera
         //- END CONTENT
               //- END IMAGE PARRALAX
             //- END SLIDE
@@ -27,11 +27,10 @@ block content
         //- END SLIDER
     //- END JUMBOTRON
 
-    section#proposal
-      .container.p-b-85.p-t-75
+    section#proposal.p-b-85.p-t-75
+      .container
         .row.text-center
           .col-sm-8.col-sm-offset-2.m-b-30
-            h6.hint-text.block-title.m-b-0 Section 01
             h1.light.m-t-5 Proposal
             //- h1.m-t-5.light Something Different, Something New.
         .row
@@ -50,11 +49,10 @@ block content
               | Through the design of the Peking Opera project, the designer will help people understand the Chinese opera’s profound cultural background and unique characteristics. The goal of the project is to express the artistic charm of the Peking Opera and inspire people with the love, the art of the Chinese nation and patriotic emotion. The Peking Opera project will help improve national quality and artistic accomplishment, so as to reignite the transmission and development of the culture of the Peking Opera.
     
     //- BEGIN Background SECTION
-    section#background.bg-master-lightest.no-overflow
-      .container.p-b-85.p-t-75
+    section#background.bg-master-lightest.no-overflow.p-b-85.p-t-75
+      .container
         .row.text-center
           .col-sm-8.col-sm-offset-2.m-b-30
-            h6.hint-text.block-title.m-b-0 Section 02
             h1.light.m-t-5 Background
         #background_slider.swiper-container
           .swiper-wrapper
@@ -82,9 +80,9 @@ block content
                   img(alt="", src="assets/images/background/3.jpg", height="300px")
             .swiper-slide.fit.bg-master-lightest
               .container
-                .col-sm-6.col-sm-height.col-middle.sm-text-center
+                .col-sm-4.col-sm-height.col-middle.sm-text-center
                   img(alt="", src="assets/images/background/4.jpg", height="300px")
-                .col-sm-6.col-sm-height.col-middle
+                .col-sm-8.col-sm-height.col-middle
                   p.m-b-20.text-left
                     | There was a 1998 movie version of Mulan made by Disney studios, which has influenced children worldwide. The animated English-speaking speaker, Mulan fully illustrates the Chinese culture to the western world; therefore, other fascinating topics arise. Western people evaluate Mulan extremely differently from people from to East. People think that she is the new modern female hero because she subverts traditional female status in society. The image that she created is the powerful and independent warrior, and no more cowardly wives or slaves, as well as the capable housewife who traditionally sits beside her husband all the time. In this project, the designer redesigned the image of the character at three different time periods, which are called Hua Dan, Wu Jing, and Tsing Yi.
           //- Add Navigation
@@ -95,23 +93,137 @@ block content
     
 
     //- BEGIN element CONTENT
-    section#element
-      .container.p-b-85.p-t-75
+    section#element.p-b-85.p-t-75
+      .container
         .row.text-center
           .col-sm-8.col-sm-offset-2.m-b-30
-            h6.hint-text.block-title.m-b-0 Section 03
             h1.light.m-t-5 Element
         .row
           img.lazy(src="assets/images/element/whole.jpg", alt="", data-max-top-translate="40", data-max-bottom-translate="300", data-speed="-0.1", data-delay="1000", data-curve="ease", width="100%")
+        //- .social-wrapper
+        //-   //- START SOCIAL
+        //-   .social(data-pages="social")
+        //-     .feed
+        //-       //- START DAY
+        //-       .day(data-social="day")
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/1.jpg")
+        //-           |                 
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/2.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/3.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/4.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/5.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/6.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/7.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/8.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/9.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/10.jpg")
+        //-           |                 
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/11.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/12.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/13.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/14.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/15.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/16.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/17.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-         //- START ITEM
+        //-         .card.share.share-other.col1(data-social="item")
+        //-           .card-content
+        //-             img.lazy(alt="Person photo", src="assets/images/element/each/18.jpg")
+        //-           |                   
+        //-         //- END ITEM
+        //-       //- END DAY
+        //-     //- END FEED
 
     //- END element CONTENT
 
     //- BEGIN costume CONTENT
-    section#costume.bg-master-lightest
-      .container.p-b-85.p-t-75
+    section#costume.bg-master-lightest.p-b-85.p-t-75
+      .container
         .row.text-center
           .col-sm-8.col-sm-offset-2.m-b-30
-            h6.hint-text.block-title.m-b-0 Section 04
             h1.light.m-t-5 Costume
         .social-wrapper
           //- START SOCIAL
@@ -123,26 +235,7 @@ block content
                 .card.share.share-other.col1(data-social="item")
                   .card-content
                     img.lazy(alt="Person photo", src="assets/images/costumes/1.jpg")
-                  |                   
-                  //- .card-description
-                  //-   p
-                  //-     a(href="#") #TBT
-                  //-     |  :D
-                  //- |                   
-                  //- .card-footer.clearfix
-                  //-   .time few seconds ago
-                  //-   |                     
-                  //-   ul.reactions
-                  //-     li
-                  //-       a(href="#")
-                  //-         | 5,345 
-                  //-         i.fa.fa-comment-o
-                  //-     |                       
-                  //-     li
-                  //-       a(href="#")
-                  //-         | 23K 
-                  //-         i.fa.fa-heart-o
-                  //- |                   
+                  |                 
                 //- END ITEM
                 //- START ITEM
                 .card.share.share-other.col1(data-social="item")
@@ -198,22 +291,20 @@ block content
     //- END costume CONTENT
 
     //- BEGIN sketch CONTENT
-    section#sketch
-      .container.p-b-85.p-t-75
+    section#sketch.p-b-85.p-t-75
+      .container
         .row.text-center
           .col-sm-8.col-sm-offset-2.m-b-30
-            h6.hint-text.block-title.m-b-0 Section 05
             h1.light.m-t-5 Sketch
         .row
           img.lazy(src="assets/images/sketch/sketch1.png", alt="", data-max-top-translate="40", data-max-bottom-translate="300", data-speed="-0.1", data-delay="1000", data-curve="ease", width="100%")
     //- END sketch CONTENT
 
     //- BEGIN Outline CONTENT
-    section#outline.bg-master-lightest
-      .container.p-b-85.p-t-75
+    section#outline.bg-master-lightest.p-b-85.p-t-75
+      .container
         .row.text-center
           .col-sm-8.col-sm-offset-2.m-b-30
-            h6.hint-text.block-title.m-b-0 Section 06
             h1.light.m-t-5 Outline
       .container.my-gallery(itemscope="", itemtype="http://schema.org/ImageGallery")
         .row
@@ -225,8 +316,8 @@ block content
                   .container-xs-height.full-height
                     .col-xs-height.col-middle.text-center.p-b-25.text-center
                       figure.bg-white.p-l-15.p-r-15.b-a.b-grey.cursor(itemprop="associatedMedia", itemscope="", itemtype="http://schema.org/ImageObject")
-                        a(href="assets/images/banner/before-outline.jpg", itemprop="contentUrl", data-size="1440x2560")
-                          img.margin-30(src="assets/images/banner/before-outline.jpg", width="100%", itemprop="thumbnail", alt="")
+                        a(href="assets/images/outline/before-outline.jpg", itemprop="contentUrl", data-size="1440x2560")
+                          img.margin-30(src="assets/images/outline/before-outline.jpg", width="100%", itemprop="thumbnail", alt="")
                         figcaption(itemprop="caption description")
                           h5.font-montserrat.all-caps Before
                 //- END CONTENT
@@ -239,8 +330,8 @@ block content
                   .container-xs-height.full-height
                     .col-xs-height.col-middle.text-center.p-b-25.text-center
                       figure.bg-white.p-l-15.p-r-15.b-a.b-grey.cursor(itemprop="associatedMedia", itemscope="", itemtype="http://schema.org/ImageObject")
-                        a(href="assets/images/banner/during-outline.jpg", itemprop="contentUrl", data-size="1440x2560")
-                          img.margin-30(src="assets/images/banner/during-outline.jpg", width="100%", itemprop="thumbnail", alt="")
+                        a(href="assets/images/outline/during-outline.jpg", itemprop="contentUrl", data-size="1440x2560")
+                          img.margin-30(src="assets/images/outline/during-outline.jpg", width="100%", itemprop="thumbnail", alt="")
                         figcaption(itemprop="caption description")
                           h5.font-montserrat.all-caps During
                 //- END CONTENT
@@ -253,8 +344,8 @@ block content
                   .container-xs-height.full-height
                     .col-xs-height.col-middle.text-center.p-b-25.text-center
                       figure.bg-white.p-l-15.p-r-15.b-a.b-grey.cursor(itemprop="associatedMedia", itemscope="", itemtype="http://schema.org/ImageObject")
-                        a(href="assets/images/banner/after-outline.jpg", itemprop="contentUrl", data-size="1440x2560")
-                          img.margin-30(src="assets/images/banner/after-outline.jpg", width="100%", itemprop="thumbnail", alt="")
+                        a(href="assets/images/outline/after-outline.jpg", itemprop="contentUrl", data-size="1440x2560")
+                          img.margin-30(src="assets/images/outline/after-outline.jpg", width="100%", itemprop="thumbnail", alt="")
                         figcaption(itemprop="caption description")
                           h5.font-montserrat.all-caps After
                 //- END CONTENT
@@ -263,33 +354,32 @@ block content
     //- END Outline CONTENT
 
     //- BEGIN sketch CONTENT
-    section#before.vh
-      .container.p-b-85.p-t-75
+    section#before.vh.p-b-85.p-t-75
+      .container
         .row.text-center
           .col-sm-8.col-sm-offset-2.m-b-30
-            h6.hint-text.block-title.m-b-0 Section 07
             h1.light.m-t-5 Before
         .row
-          img.lazy(src="assets/images/before/before.jpg", alt="", data-max-top-translate="40", data-max-bottom-translate="300", data-speed="-0.1", data-delay="1000", data-curve="ease", width="100%")
+          .relative
+            img(src="assets/images/before/node/butterfly.svg", alt="")
+            img.lazy(src="assets/images/before/before.jpg", alt="", data-max-top-translate="40", data-max-bottom-translate="300", data-speed="-0.1", data-delay="1000", data-curve="ease", width="100%")
     //- END sketch CONTENT
 
     //- BEGIN sketch CONTENT
-    section#during.vh
-      .container.p-b-85.p-t-75
+    section#during.vh.p-b-85.p-t-75
+      .container
         .row.text-center
           .col-sm-8.col-sm-offset-2.m-b-30
-            h6.hint-text.block-title.m-b-0 Section 08
             h1.light.m-t-5 During
         .row
           img.lazy(src="assets/images/during/during.jpg", alt="", data-max-top-translate="40", data-max-bottom-translate="300", data-speed="-0.1", data-delay="1000", data-curve="ease", width="100%")
     //- END sketch CONTENT
 
     //- BEGIN sketch CONTENT
-    section#after.vh
-      .container.p-b-85.p-t-75
+    section#after.vh.p-b-85.p-t-75
+      .container
         .row.text-center
           .col-sm-8.col-sm-offset-2.m-b-30
-            h6.hint-text.block-title.m-b-0 Section 09
             h1.light.m-t-5 After
         .row
           img.lazy(src="assets/images/after/after.jpg", alt="", data-max-top-translate="40", data-max-bottom-translate="300", data-speed="-0.1", data-delay="1000", data-curve="ease", width="100%")
