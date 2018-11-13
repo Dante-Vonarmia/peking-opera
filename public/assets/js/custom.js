@@ -27,12 +27,23 @@ $(function() {
     });
 
     //Intialize Slider
-    var background_slider = new Swiper('#background_slider', {
+    var background_slider = new Swiper('#background_slider.swiper-container', {
         pagination: '.swiper-pagination',
         autoHeight: true,
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
+        parallax: true,
+        loop: true,
+        speed: 1000
+    });
+
+    //Intialize Testamonials
+    var sketch_slider = new Swiper('#sketch_slider.swiper-container', {
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        loop: true,
         parallax: true,
         speed: 1000
     });
