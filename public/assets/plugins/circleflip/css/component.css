@@ -19,6 +19,7 @@
 	-webkit-perspective: 1200px;
 	-moz-perspective: 1200px;
 	perspective: 1200px;
+	cursor: pointer;
 }
 
 .fc-slideshow nav {

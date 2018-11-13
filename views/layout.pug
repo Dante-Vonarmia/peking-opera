@@ -21,6 +21,7 @@ html(lang="en")
     link(href='assets/plugins/swiper/css/swiper.css', rel='stylesheet', type='text/css', media='screen')
     link(href="assets/plugins/photoswipe/photoswipe.css", rel="stylesheet", type='text/css', media='screen')
     link(href="assets/plugins/circleflip/css/component.css", rel="stylesheet", type='text/css', media='screen')
+    link(href="assets/plugins/comparison/css/style.css", rel="stylesheet", type='text/css', media='screen')
     //-
       Skin CSS file (styling of UI - buttons, caption, etc.)
       In the folder of skin CSS file there are also:
@@ -103,24 +104,26 @@ html(lang="en")
     //- END HEADER
 
     block content
-    //- //- START FOOTER
-    //- section.p-b-30.p-t-40.bg-master-darkest
-    //-   .container
-    //-     .row
-    //-       .col-sm-6
-    //-         img.logo(src="assets/images/logo.png", alt="")
-    //-         |             
-    //-         .m-t-10
-    //-       |           
-    //-       .col-sm-6.text-right.font-arial.sm-text-left
-    //-         p.fs-11.small-text.no-margin.text-white
-    //-           span.hint-text Exclusive only at
-    //-           |  Envato Marketplace,Themeforest 
-    //-           span.hint-text See
-    //-           |  Standard licenses & Extended licenses
-    //-         |             
-    //-         p.fs-11.muted.text-white.m-t-5 Copyright © 2014 REVOX. All Rights Reserved.
-    //- //- END FOOTER
+    //- START FOOTER
+    section.p-b-30.p-t-40.bg-master-darkest
+      .container
+        .row
+          .col-sm-6
+            img.logo(src="assets/images/logo.png", alt="")
+            |             
+            .m-t-10
+          |           
+          .col-sm-6.text-right.font-arial.sm-text-left
+            p.fs-11.small-text.no-margin.text-white
+              span.hint-text 
+              |  All copy right  
+              span.hint-text by
+              |  Meng Zhou
+            |             
+            p.fs-11.muted.text-white.m-t-5 Copyright © 2018 Meng-Zhou. All Rights Reserved.
+    //- END FOOTER
+    a.cd-top.js-cd-top(href="#home") Top
+
 
     //- Root element of PhotoSwipe. Must have class pswp.
     .pswp(tabindex="-1", role="dialog", aria-hidden="true")
@@ -191,6 +194,7 @@ html(lang="en")
     //- UI JS file
     script(type='text/javascript', src="assets/plugins/photoswipe/photoswipe-ui-default.min.js")
     script(type='text/javascript', src="assets/plugins/circleflip/js/jquery.flipshow.js")
+    script(type='text/javascript', src="assets/plugins/comparison/js/main.js")
     //- END VENDOR JS
     //- BEGIN PAGES FRONTEND LIB
     script(type='text/javascript', src='pages/js/pages.frontend.js')
