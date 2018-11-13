@@ -20,6 +20,7 @@ html(lang="en")
     link(href='assets/plugins/font-awesome/css/font-awesome.css', rel='stylesheet', type='text/css')
     link(href='assets/plugins/swiper/css/swiper.css', rel='stylesheet', type='text/css', media='screen')
     link(href="assets/plugins/photoswipe/photoswipe.css", rel="stylesheet", type='text/css', media='screen')
+    link(href="assets/plugins/circleflip/css/component.css", rel="stylesheet", type='text/css', media='screen')
     //-
       Skin CSS file (styling of UI - buttons, caption, etc.)
       In the folder of skin CSS file there are also:
@@ -32,6 +33,7 @@ html(lang="en")
     link.main-stylesheet(href='pages/css/pages-icons.css', rel='stylesheet', type='text/css')
     //- BEGIN PAGES CSS
     link.main-stylesheet(href='assets/styles/style.css', rel='stylesheet', type='text/css')
+    script(type='text/javascript', src='assets/plugins/modernizr.custom.js')
     
   body.pace-primary.relative(data-spy='scroll', data-target='#navbar')
     //- BEGIN HEADER
@@ -188,6 +190,7 @@ html(lang="en")
     script(type='text/javascript', src="assets/plugins/photoswipe/photoswipe.min.js")
     //- UI JS file
     script(type='text/javascript', src="assets/plugins/photoswipe/photoswipe-ui-default.min.js")
+    script(type='text/javascript', src="assets/plugins/circleflip/js/jquery.flipshow.js")
     //- END VENDOR JS
     //- BEGIN PAGES FRONTEND LIB
     script(type='text/javascript', src='pages/js/pages.frontend.js')

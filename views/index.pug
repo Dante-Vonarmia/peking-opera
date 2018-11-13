@@ -36,13 +36,24 @@ block content
         .row
           .col-sm-4.col-sm-height.col-middle.sm-text-center
             //- img(src="assets/images/proposal/1.jpg", width="100%", alt="")
-            .col-sm-8.col-sm-offset-2.text-center.bg-success.hover-push.demo-story-block
-              .hover-backdrop(style="background:url('assets/images/proposal/1.jpg')")
-              |           
-              .hover-caption.bottom-left.bottom-right.p-b-40
-                a(href="https://en.wikipedia.org/wiki/Peking_opera", target="_blank").font-montserrat.fs-12.hint-text.text-white.all-caps 
-                  | More information 
-                  i.fa.fa-link
+            .col-sm-8.col-sm-offset-2.text-center
+              #fc-slideshow.fc-slideshow
+                ul.fc-slides
+                  li.no-padding
+                    img(src="assets/images/proposal/1.jpg", width="100%")
+                  li.no-padding
+                    img(src="assets/images/proposal/2.jpg", width="100%")
+                  li.no-padding
+                    img(src="assets/images/proposal/3.jpg", width="100%")
+                  li.no-padding
+                    img(src="assets/images/proposal/4.jpg", width="100%")
+                  li.no-padding
+                    img(src="assets/images/proposal/5.jpg", width="100%")
+                  li.no-padding
+                    img(src="assets/images/proposal/6.jpg", width="100%")
+
+              //- .hover-backdrop(style="background:url('assets/images/proposal/1.jpg')")
+              //- |
 
           .col-sm-5.col-sm-height.col-middle.sm-p-l-30
             p.m-t-15.text-left
