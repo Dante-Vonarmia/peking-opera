@@ -2,7 +2,7 @@ extends layout
 
 mixin albumList(item)
   li.m-r-20.m-l-20.inline.sm-inline.text-center
-    span.link.active.text-black.fs-13.block-title(data-filter='.' + item.catalog)= item.label
+    span.link.active.text-black.fs-13.block-title.cursor(data-filter='.' + item.catalog)= item.label
 
 mixin gridList(item)
   //- START GALLERY ITEM
@@ -162,7 +162,7 @@ block content
           .col-sm-12.p-t-15.p-b-15
             ul#filters.no-style.no-margin.text-center
               li.m-r-20.m-l-20.inline.sm-block.text-center
-                span.link.active.text-black.fs-13.block-title(data-filter='*') All
+                span.link.active.text-black.fs-13.block-title.cursor(data-filter='*') All
               each item in menu
                 +albumList(item)
       .container
