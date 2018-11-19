@@ -21,6 +21,7 @@ html(lang="en")
     link(href='assets/plugins/swiper/css/swiper.css', rel='stylesheet', type='text/css', media='screen')
     link(href="assets/plugins/photoswipe/photoswipe.css", rel="stylesheet", type='text/css', media='screen')
     link(href="assets/plugins/circleflip/css/component.css", rel="stylesheet", type='text/css', media='screen')
+    link(href="assets/plugins/player/player.css", rel="stylesheet", type='text/css', media='screen')
     link(href="assets/plugins/comparison/css/style.css", rel="stylesheet", type='text/css', media='screen')
     //-
       Skin CSS file (styling of UI - buttons, caption, etc.)
@@ -105,15 +106,44 @@ html(lang="en")
 
     block content
     //- START FOOTER
-    section.p-b-30.p-t-40.bg-master-darkest
+    section.player.p-b-30.p-t-40.bg-master-darkest
       .container
         .row
-          .col-sm-6
+          .col-sm-2
             img.logo(src="assets/images/logo.png", alt="")
             |             
             .m-t-10
           |           
-          .col-sm-6.text-right.font-arial.sm-text-left
+          .col-sm-6
+            .row
+              //- Top Info
+              #title
+                span#track
+                #timer 0:00
+                #duration 0:00
+              //- Controls
+              .controlsOuter
+                .controlsInner
+                  #loading
+                  #playBtn.btnPlayer
+                  #pauseBtn.btnPlayer
+                  #prevBtn.btnPlayer
+                  #nextBtn.btnPlayer
+                #playlistBtn.btnPlayer
+                #volumeBtn.btnPlayer
+              //- Progress
+              #waveform
+              #bar
+              #progress
+              //- Playlist
+              #playlist
+                #list
+              //- Volume
+              #volume.fadeout
+                #barFull.bar
+                #barEmpty.bar
+                #sliderBtn
+          .col-sm-3.col-sm-offset-1.text-right.font-arial.sm-text-left
             p.fs-11.small-text.no-margin.text-white
               span.hint-text 
               |  All copy right  
@@ -174,7 +204,7 @@ html(lang="en")
             .pswp__caption__center
 
     //- BEGIN CORE FRAMEWORK
-    script(src='assets/plugins/pace/pace.min.js', type='text/javascript')
+    script(type="text/javascript", src='assets/plugins/pace/pace.min.js')
     script(type='text/javascript', src='pages/js/pages.image.loader.js')
     script(type='text/javascript', src='assets/plugins/jquery/jquery-1.11.1.min.js')
     script(type='text/javascript', src='assets/plugins/bootstrap/js/bootstrap.min.js')
@@ -183,9 +213,9 @@ html(lang="en")
     script(type='text/javascript', src='assets/plugins/velocity/velocity.min.js')
     script(type='text/javascript', src='assets/plugins/velocity/velocity.ui.js')
     //- Waits for the images to be loaded before applying the Isotope plugin
-    script(src="assets/plugins/imagesloaded/imagesloaded.pkgd.min.js")
+    script(type="text/javascript", src="assets/plugins/imagesloaded/imagesloaded.pkgd.min.js")
     //- Isotope plugin arranges the card layout
-    script(src="assets/plugins/jquery-isotope/isotope.pkgd.min.js", type="text/javascript")
+    script(type="text/javascript", src="assets/plugins/jquery-isotope/isotope.pkgd.min.js")
 
     //- BEGIN RETINA IMAGE LOADER
     script(type='text/javascript', src='assets/plugins/jquery-unveil/jquery.unveil.min.js')
@@ -195,6 +225,8 @@ html(lang="en")
     script(type='text/javascript', src="assets/plugins/photoswipe/photoswipe-ui-default.min.js")
     script(type='text/javascript', src="assets/plugins/circleflip/js/jquery.flipshow.js")
     script(type='text/javascript', src="assets/plugins/comparison/js/main.js")
+    script(type='text/javascript', src="assets/plugins/player/howler.core.js")
+    script(type='text/javascript', src="assets/plugins/player/siriwave.js")
     //- END VENDOR JS
     //- BEGIN PAGES FRONTEND LIB
     script(type='text/javascript', src='pages/js/pages.frontend.js')
@@ -203,4 +235,6 @@ html(lang="en")
     //- END PAGES LIB
     //- BEGIN YOUR CUSTOM JS
     script(type='text/javascript', src='assets/js/custom.js')
+    //- script(type='text/javascript', src='assets/js/gallery.js')
+    script(type='text/javascript', src="assets/plugins/player/player.js")
     //- END PAGES LIB

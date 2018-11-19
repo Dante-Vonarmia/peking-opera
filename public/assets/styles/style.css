@@ -14,6 +14,10 @@
 	color: #bb898b!important;
 }
 
+.gallery-item {
+  border: 5px solid #fff;
+}
+
 figure[itemprop="associatedMedia"]:hover {
 	border-color: #bb898b;
 	-webkit-transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;

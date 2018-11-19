@@ -8,6 +8,21 @@ $(function() {
     // Proposal
     $('#fc-slideshow').flipshow();
 
+    // init Isotope
+    var $grid = $('.gallery').isotope({
+        itemSelector: '.gallery-item',
+        layoutMode: 'fitRows',
+    });
+
+    // bind filter button click
+    $('#filters').on('click', 'li > span', function() {
+        var filterValue = $(this).attr('data-filter');
+        // use filterFn if matches value
+        //- filterValue = filterFns[ filterValue ] || filterValue;
+        $grid.isotope({
+            filter: filterValue
+        });
+    });
     // ======================================
     // Helper functions
     // ======================================
@@ -341,5 +356,7 @@ $(function() {
         }
         if (classList.length > 1) removeClass(el, classList.slice(1).join(' '));
     }
+
+
 
 });

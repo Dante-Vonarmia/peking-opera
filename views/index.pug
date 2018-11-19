@@ -1,5 +1,18 @@
 extends layout
 
+mixin albumList(item)
+  li.m-r-20.m-l-20.inline.sm-inline.text-center
+    span.link.active.text-black.fs-13.block-title(data-filter='.' + item.catalog)= item.label
+
+mixin gridList(item)
+  //- START GALLERY ITEM
+  .gallery-item.col-sm-2.col-xs-6.no-padding.hover-zoom(class=item.catalog, data-category=item.catalog)
+    .inner.bottom-left.bottom-right.margin-30
+    .ar-1-1
+      //- START PREVIEW
+      div(data-pages-bg-image='assets/images/element/'+ item.url +'.jpg', data-bg-overlay='black', data-overlay-opacity='0.1')
+  //- END GALLERY ITEM
+
 block content
   .page-wrappers
     section#home.jumbotron.full-vh(data-pages="parallax")
@@ -66,30 +79,6 @@ block content
             .mouse
               .mouse-scroll
       //- END SLIDER
-
-    //- //- BEGIN JUMBOTRON
-    //- section#home.jumbotron.full-vh.bg-white(data-pages='parallax')
-    //-   .inner.full-height
-    //-     //- BEGIN SLIDER
-    //-     //- BEGIN CONTENT
-    //-     .content-layer
-    //-       .inner.full-height(data-pages-bg-image='assets/images/banner/before-outline.jpg', data-bg-overlay='black', data-overlay-opacity='0.33', draggable='false')
-    //-         .container-xs-height.full-height.inner
-    //-           .col-xs-height.col-middle.text-left
-    //-             .container
-    //-               .col-sm-12
-    //-                 h1.light.bold.text-white.text-center The Culture of China
-    //-                 h1.light.bold.text-white.text-center Peking Opera
-    //-     //- END CONTENT
-    //-           //- END IMAGE PARRALAX
-    //-         //- END SLIDE
-    //-       //- BEGIN ANIMATED MOUSE
-    //-     .mouse-wrapper
-    //-       .mouse
-    //-         .mouse-scroll
-
-    //-     //- END SLIDER
-    //- //- END JUMBOTRON
 
     section#proposal.p-b-85.p-t-75
       .container
@@ -164,17 +153,24 @@ block content
           .swiper-navigation.swiper-white-solid.swiper-button-next.auto-reveal
     //- END Background SECTION
     
-
-    //- BEGIN element CONTENT
+    //- BEGIN PORTFOLIO SECTION
     section#element.p-b-85.p-t-75
       .container
-        .row.text-center
-          .col-sm-8.col-sm-offset-2.m-b-30
-            h1.light.m-t-5 Element
-        .row
-          img.lazy(src="assets/images/element/whole.jpg", alt="", data-max-top-translate="40", data-max-bottom-translate="300", data-speed="-0.1", data-delay="1000", data-curve="ease", width="100%")
+        .m-b-30
+          h1.light.m-t-5 Element
+          .b-b.b-grey.m-t-30
+          .col-sm-12.p-t-15.p-b-15
+            ul#filters.no-style.no-margin.text-center
+              li.m-r-20.m-l-20.inline.sm-block.text-center
+                span.link.active.text-black.fs-13.block-title(data-filter='*') All
+              each item in menu
+                +albumList(item)
+      .container
+        .gallery
+          each item in context
+            +gridList(item)
 
-    //- END element CONTENT
+    //- END PORTFOLIO SECTION
 
     //- BEGIN costume CONTENT
     section#costume.bg-master-lightest.p-b-85.p-t-75
