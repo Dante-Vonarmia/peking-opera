@@ -297,10 +297,10 @@ $(function() {
             }
         });
         //smooth scroll to top
-        backTop.addEventListener('click', function(event) {
-            event.preventDefault();
-            (!window.requestAnimationFrame) ? window.scrollTo(0, 0): scrollTop(scrollDuration);
-        });
+        // backTop.addEventListener('click', function(event) {
+        //     event.preventDefault();
+        //     (!window.requestAnimationFrame) ? window.scrollTo(0, 0): scrollTop(scrollDuration);
+        // });
     }
 
     function checkBackToTop() {
