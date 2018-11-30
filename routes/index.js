@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	var items = [{
+	const items = [{
 		catalog: 'qw',
 		label: '器物 Qi Wu'
 	}, {
@@ -23,7 +23,7 @@ router.get('/', function(req, res, next) {
 		label: '饰品 Shi Pin'
 	}];
 
-	var data = [{
+	const data = [{
 		url: '1',
 		lablel: '门窗 Men Chuang',
 		catalog: 'mc'
