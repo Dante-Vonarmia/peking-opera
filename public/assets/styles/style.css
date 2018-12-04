@@ -5,6 +5,12 @@
 .header .menu > li {
 	margin: 0 !important;
 }
+
+.header .menu > li > a {
+  color: #000;
+  opacity: 0.5;
+}
+
 .header .menu > li.active > a {
 	opacity: 1!important;
 	color: #bb898b!important;
